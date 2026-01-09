@@ -20,4 +20,17 @@ class Distance:
     def __truediv__(self, other):
         return Distance(self.km / other.km)
 
+    def __lt__(self, other):
+        return self.km < other.km
 
+    def __gt__(self, other):
+        return self.km > other.km
+
+    def __le__(self, other):
+        return self.km <= other.km
+
+    def __ge__(self, other):
+        return self.km >= other.km
+
+    def __eq__(self, other):
+        return self.km == other.km
